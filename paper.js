@@ -9,9 +9,7 @@ class Paper{
             density : 1.2
         } 
         
-        this.body = Bodies.rectangle(this.x,this.y,200,200,options);
-        this.width = width;
-        this.height = height;
+        this.body = Bodies.circle(this.x,this.y,200,options);
         this.image = loadImage("paper.png");
         World.add(world,this.body);
     }
@@ -21,7 +19,7 @@ class Paper{
         push();
         translate(pos.x,pos.y);
         imageMode(CENTER);
-        image(this.image,0,0,200,200);
+        image(this.image,0,0,200);
         pop();
     }
 }
