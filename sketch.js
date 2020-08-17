@@ -22,7 +22,7 @@ function setup() {
 	//Create the Bodies Here.
 
 
-	paper1 = new Paper(600,300);
+	paper1 = new Paper(400,300);
 
 	ground = new Ground();
 
@@ -37,11 +37,12 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
-	
+  background(255);
+
+  paper1.display();
   ground.display();
   dustbin.display();
-  paper1.display();
+  
   
   drawSprites();
 
@@ -51,9 +52,8 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW ){
-		Matter.Body.applyForce(paper1.body,paper1.position,{x:20,y:-15});	
+		Matter.Body.applyForce(paper1.body,paper1.body.position,{x :700, y:-1100});	
 	}
 }
-
 
 

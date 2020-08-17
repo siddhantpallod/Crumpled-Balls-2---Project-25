@@ -6,7 +6,7 @@ class Dustbin{
 
         
 
-        this.body = Bodies.rectangle(1000,480,20,20,options);
+        this.body = Bodies.rectangle(1050,480,20,20,options);
         this.width = width;
         this.height = height;
         this.image = loadImage("dustbingreen.png");
