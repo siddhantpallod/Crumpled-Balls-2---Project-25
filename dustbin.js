@@ -6,12 +6,12 @@ class Dustbin{
 
         
 
-        this.body = Bodies.rectangle(1050,480,20,20,options);
+        this.body = Bodies.rectangle(1085,460,40,40,options);
         this.width = width;
         this.height = height;
         this.image = loadImage("dustbingreen.png");
         World.add(world,this.body);
-        
+    
         
     }
 
@@ -21,7 +21,7 @@ class Dustbin{
         translate(this.body.position.x, this.body.position.y);
         rotate(angle);
         imageMode(CENTER);
-        image(this.image, 0, 0,200,150);
+        image(this.image, 0, 0,200,200);
         pop();
     }
 }
